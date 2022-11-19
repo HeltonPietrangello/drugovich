@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\grupo>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\gerentes>
  */
-class GrupoFactory extends Factory
+class GerentesFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,7 +16,8 @@ class GrupoFactory extends Factory
      */
     public function definition()
     {
-         return [
- ];
+        return [
+            
+        ];
     }
 }
