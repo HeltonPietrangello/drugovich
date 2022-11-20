@@ -7,7 +7,7 @@ Usar os dados da tabela "gerentes" para fazer o login e gerar um token. Este tok
 endpoints da aplicação.<br>
 - **Endpoint: http://127.0.0.1:8000/api/login**
 <br>
-<p align="center"><img src="![1](https://user-images.githubusercontent.com/5507381/202921842-692a63e8-e402-426f-b56a-51d5b31feb20.png)"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/5507381/202921842-692a63e8-e402-426f-b56a-51d5b31feb20.png"></p>
 <br>
 <hr>
 <br>
