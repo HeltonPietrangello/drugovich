@@ -14,15 +14,15 @@ class GerentesSeeder extends Seeder
     {
         DB::table('gerentes')->insert([
             'nome' => 'Gerente Nivel 1',
-            'email' => 'gerente_1_@gmail.com',
-            'password' => bcrypt(123456789),
+            'email' => 'nivel_1_@gmail.com',
+            'password' => bcrypt(123),
             'nivel' => 1
         ]);
 
         DB::table('gerentes')->insert([
             'nome' => 'Gerente Nivel 2',
-            'email' => 'gerente_2_@gmail.com',
-            'password' => bcrypt(123456789),
+            'email' => 'nivel_2_@gmail.com',
+            'password' => bcrypt(123),
             'nivel' => 2
         ]);
     }

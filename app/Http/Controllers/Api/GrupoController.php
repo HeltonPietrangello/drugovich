@@ -16,6 +16,7 @@ class GrupoController extends Controller
        $this->grupo = $grupo;
     }
 
+    
     public function index()
     {
         return $this->grupo->all();
