@@ -9,9 +9,10 @@ class Cliente extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['cnpj', 'nome'];
+    protected $fillable = ['cnpj', 'nome', 'data_fundacao'];
 
-    public function grupo(){
+    public function grupo()
+    {
         return $this->belongsTo(Grupo::class);
     }
 }

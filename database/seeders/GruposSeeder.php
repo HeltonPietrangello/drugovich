@@ -12,11 +12,6 @@ use App\Models\Grupo;
 
 class GruposSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         DB::table('grupos')->insert([

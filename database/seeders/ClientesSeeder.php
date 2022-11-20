@@ -10,26 +10,28 @@ use Illuminate\Support\Str;
 
 class ClientesSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         DB::table('clientes')->insert([
             'cnpj' => 'XX. XXX. XXX/0001-XX',
             'nome' => 'Cliente 1',
+            'data_fundacao' => '23/01/1985',
             'grupo_id' => 1
+
         ]);
+
         DB::table('clientes')->insert([
-            'cnpj' => 'XX. XXX. XXX/0001-XX',
+            'cnpj' => 'XX. XXX. XXX/0002-XX',
             'nome' => 'Cliente 2',
+            'data_fundacao' => '05/12/2001',
             'grupo_id' => 1
+
         ]);
+        
         DB::table('clientes')->insert([
-            'cnpj' => 'XX. XXX. XXX/0001-XX',
+            'cnpj' => 'XX. XXX. XXX/0003-XX',
             'nome' => 'Cliente 3',
+            'data_fundacao' => '29/01/1982',
             'grupo_id' => 3
         ]);
     }

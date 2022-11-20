@@ -3,9 +3,19 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Gerente extends Model
+class Gerente extends Authenticatable
 {
-    use HasFactory;
+    use HasApiTokens, HasFactory;
+
+    protected $table = 'gerentes';
+
+    public $timestamps= false;
+
+    protected $guard = 'gerente';
+
+    protected $fillable = ['nome', 'email', 'nivel'];
+
 }

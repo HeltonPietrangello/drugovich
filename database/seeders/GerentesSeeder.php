@@ -10,24 +10,20 @@ use Illuminate\Support\Str;
 
 class GerentesSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         DB::table('gerentes')->insert([
-            'nome' => 'Gerente 1',
-            'email' => 'gerente1@gmail.com',
+            'nome' => 'Gerente Nivel 1',
+            'email' => 'gerente_1_@gmail.com',
+            'password' => bcrypt(123456789),
             'nivel' => 1
         ]);
 
         DB::table('gerentes')->insert([
-            'nome' => 'Gerente 2',
-            'email' => 'gerente2@gmail.com',
+            'nome' => 'Gerente Nivel 2',
+            'email' => 'gerente_2_@gmail.com',
+            'password' => bcrypt(123456789),
             'nivel' => 2
         ]);
-
     }
 }

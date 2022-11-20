@@ -9,11 +9,14 @@ class Grupo extends Model
 {
     use HasFactory;
 
-    //protected $table = 'grupos';
+    protected $table = 'grupos';
+
+    public $timestamps= false;
 
     protected $fillable = ['nome'];
 
-    public function clientes(){
+    public function clientes()
+    {
         return $this->hasMany(Cliente::class);
     }
 }
